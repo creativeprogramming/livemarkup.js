@@ -7,6 +7,8 @@ Special HTML templating language made for [Backbone.js].
     you can't use Livemarkup.js yet.) This document outlines the intended 
 feature set that the initial release will have.
 
+Feel free to [leave an issue][issues] with your feedback.
+
 Getting started
 ---------------
 
@@ -505,3 +507,4 @@ LM.register 'books/show', jade.compile
 
 [Jade]: http://jade-lang.com
 [Backbone.js]: http://backbonejs.org
+[issues]: https://github.com/rstacruz/livemarkup.js/issues
