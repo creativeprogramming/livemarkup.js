@@ -76,6 +76,12 @@ Features
  * You can use Livemarkup.js with [fancy HTML syntax 
  compilers](#fancy-syntax-compilers).
 
+ * The directives in `{{ ... }}` are written in JavaScript, not some custom-made 
+ DSL. That means you can do whatever it is you want.
+
+ * Made for Backbone.js, but can be used without it. (not sure why you'd wanna, 
+     though)
+
 Syntax
 ------
 
@@ -481,8 +487,9 @@ template.render();
 Fancy syntax compilers
 ----------------------
 
-LiveMarkup's syntax is intentionally made simple so that other compile-to-HTML
-markup languages can be used to generate LM templates. To illustate with [Jade]:
+LiveMarkup's syntax is intentionally made using HTML attributes and HTML text 
+nodes so compile-to-HTML markup languages can be used to generate LM templates.  
+To illustate with [Jade]:
 
 ``` coffeescript
 LM.register 'books/show', jade.compile
