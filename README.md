@@ -99,11 +99,19 @@ Hello {{{ view.getHTML() }}}
 
 ### Model binding
 
-To update a certain node when a model event happens:
+To update a certain node and its descendants when a model event happens:
 
 ``` html
-<span l-listen="model#change:first_name model#change:last_name">
+<span l-listen="change:first_name change:last_name">
   Hello {{ model.getFullName() }}
+</span>
+```
+
+If you need to listen to the view using the `l-listen="object#event"` syntax:
+
+``` html
+<span l-listen="view#refresh">
+  ...
 </span>
 ```
 
